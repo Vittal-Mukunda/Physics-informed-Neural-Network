@@ -2,18 +2,17 @@
 
 This project implements a **Physics-Informed Neural Network (PINN)** to approximate the solution of the **damped harmonic oscillator** differential equation:
 
-\[
+$$
 \frac{d^2x}{dt^2} + 2 \xi \frac{dx}{dt} + x = 0
-\]
+$$
 
-across a range of damping ratios \(\xi \in [0.1, 0.4]\).  
+across a range of damping ratios \(\xi \in [0.1, 0.4]\).
 
 Unlike traditional neural networks, the PINN **incorporates the governing physical law directly** into its loss function, allowing it to learn solutions that satisfy both the **differential equation** and the **initial conditions**:
 
 - \(x(0) = x_0 = 0.7\)  
-- \(\frac{dx}{dt}(0) = v_0 = 1.2\)  
+- \(\frac{dx}{dt}(0) = v_0 = 1.2\)
 
----
 
 ## Key Features
 
